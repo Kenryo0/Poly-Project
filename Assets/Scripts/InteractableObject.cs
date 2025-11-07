@@ -52,7 +52,6 @@ public class AN_Button : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E) && !isValve && DoorObject != null && DoorObject.Remote && NearView()) // 1.lever and 2.button
             {
-                print("isLeverOrDoor");
                 DoorObject.Action(); // void in door script to open/close
                 if (isLever) // animations
                 {
@@ -66,7 +65,6 @@ public class AN_Button : MonoBehaviour
                 // changing value in script
                 if (Input.GetKey(KeyCode.E) && NearView())
                 {
-                    print("isValvePressed");
                     if (valveBool)
                     {
                         if (!isOpened && CanOpen && current < max) current += speed * Time.deltaTime;

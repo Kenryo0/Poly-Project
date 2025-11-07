@@ -71,7 +71,7 @@ public class DoorController : MonoBehaviour
             else if (!isOpened && CanOpen && !KeyLocked)
             {
                 isOpened = true;
-                rbDoor.AddRelativeTorque(new Vector3(0, 0, 20f)); 
+                rbDoor.AddRelativeTorque(new Vector3(0, -60f, 0)); 
             }
         
         }
